@@ -21,7 +21,7 @@ function temprature1(temp) {
     //         break;
     // }
 
-    if (-5 <= temp && temp<= 10) {
+    if (-5 <= temp && temp <= 10) {
         pTag.innerText += "The weather is cold";
     } else if (10 < temp && temp <= 25) {
         pTag.innerText += "The weather is moderate";
@@ -32,8 +32,8 @@ function temprature1(temp) {
 };
 
 // Between min (included) and max (included): Math.floor(Math.random() * (max - min + 1)) + min;
-let temp = Math.floor(Math.random() * 31) - 5;
-let weatherIs = temprature1(temp);
+let temp1 = Math.floor(Math.random() * 31) - 5;
+let weatherIs = temprature1(temp1);
 
 
 // Ex 2 | Highest value in an array
@@ -60,20 +60,27 @@ document.getElementById("max").innerHTML = `Max: ${findMax(myArray1)}`;
 // Ex 3 | Temperature v2.0
 function temprature2(temp) {
     let pTag = document.getElementById("temprature2");
+    let imgTag = document.getElementById("imgTemp");
     console.log(temp);
     pTag.innerText = `Temprature is ${temp} , `
 
     if (temp < -5) {
-        pTag.innerText += "The weather is frizzy";
+        pTag.innerText += "The weather is freezing";
+        imgTag.src = '../img/freezing.jpeg';
     } else if (-5 <= temp && temp <= 10) {
         pTag.innerText += "The weather is cold";
+        imgTag.src = '../img/cold-2.jpeg';
     } else if (10 < temp && temp <= 25) {
         pTag.innerText += "The weather is moderate";
+        imgTag.src = '../img/moderate-1.jpeg';
     } else if (temp > 25) {
         pTag.innerText += "The weather is hot";
+        imgTag.src = '../img/hot-2.jpeg';
     }
 
 };
 
-let weatherIs2 = temprature2(temp);
+// Between -10c and 40c
+let temp2 = Math.floor(Math.random() * 51) - 10;
+let weatherIs2 = temprature2(temp2);
 
