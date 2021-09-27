@@ -69,10 +69,7 @@ console.log(getMaxValue(intArray));
 Now when you have program Temperature v1.0 done it time to upgrade it to the version 2.0. Now you should create a nice looking responsive front-end for your program (mobile friendly) and create more messages (e.g. if the temperature is above 32c output "The weather is hot" etc.) and you should display a proper image for the current weather condition.
 */
 
-function getTemperatureInfoAdvanced() {
-    let minTemperature = -5;
-    let maxTemperature = 40;
-
+function getTemperatureInfoAdvanced(minTemperature,maxTemperature) {
     // Get random integer from maximum & minimum including both
     let temperature = Math.floor(Math.random() * (maxTemperature - minTemperature + 1) + minTemperature);
 
@@ -86,4 +83,4 @@ function getTemperatureInfoAdvanced() {
     }
 }
 
-console.log(getTemperatureInfoAdvanced());
+console.log(getTemperatureInfoAdvanced(-5, 40));
