@@ -40,7 +40,6 @@ let weatherIs = temprature1(temp1);
 
 
 // Ex 2 - Highest value in an array
-
 function findMax(array) {
     let maxIs = array[0];
 
@@ -50,7 +49,7 @@ function findMax(array) {
         }
     }
 
-    return maxIs
+    return maxIs;
 
 }
 
@@ -65,7 +64,7 @@ function temprature2(temp) {
     let pTag = document.getElementById("temprature2");
     let imgTag = document.getElementById("imgTemp");
     console.log(temp);
-    pTag.innerText = `Temprature is ${temp} , `
+    pTag.innerText = `Temprature is ${temp} , `;
 
     /* Using if condition
     if (temp < -5) {
